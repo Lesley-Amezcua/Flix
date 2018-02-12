@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7334E4F120311E8600B04396 /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7334E4F020311E8600B04396 /* PosterCell.swift */; };
+		7334E4F32031220100B04396 /* SuperheroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7334E4F22031220100B04396 /* SuperheroViewController.swift */; };
+		73E5FFD4202BB36700D61E36 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E5FFD3202BB36700D61E36 /* DetailViewController.swift */; };
 		73FEDABB2027A7AA009E0E90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FEDABA2027A7AA009E0E90 /* AppDelegate.swift */; };
 		73FEDAC02027A7AA009E0E90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FEDABE2027A7AA009E0E90 /* Main.storyboard */; };
 		73FEDAC22027A7AA009E0E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FEDAC12027A7AA009E0E90 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		1EAAC890120E0DAB768A79D2 /* Pods-flix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flix/Pods-flix.debug.xcconfig"; sourceTree = "<group>"; };
 		43481ADD769A513B72E7FC1F /* Pods_flix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7334E4F020311E8600B04396 /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+		7334E4F22031220100B04396 /* SuperheroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroViewController.swift; sourceTree = "<group>"; };
+		73E5FFD3202BB36700D61E36 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		73FEDAB72027A7AA009E0E90 /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FEDABA2027A7AA009E0E90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73FEDABF2027A7AA009E0E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +120,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		73E5FFD1202BB29D00D61E36 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				73FEDAE82027D3A5009E0E90 /* NowPlayingViewController.swift */,
+				73E5FFD3202BB36700D61E36 /* DetailViewController.swift */,
+				7334E4F22031220100B04396 /* SuperheroViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		73E5FFD2202BB2BC00D61E36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73FEDAEA2027F8FD009E0E90 /* MovieCell.swift */,
+				7334E4F020311E8600B04396 /* PosterCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		73FEDAAE2027A7AA009E0E90 = {
 			isa = PBXGroup;
 			children = (
@@ -139,13 +164,13 @@
 		73FEDAB92027A7AA009E0E90 /* flix */ = {
 			isa = PBXGroup;
 			children = (
-				73FEDAE82027D3A5009E0E90 /* NowPlayingViewController.swift */,
+				73E5FFD2202BB2BC00D61E36 /* Views */,
+				73E5FFD1202BB29D00D61E36 /* ViewControllers */,
 				73FEDABA2027A7AA009E0E90 /* AppDelegate.swift */,
 				73FEDABE2027A7AA009E0E90 /* Main.storyboard */,
 				73FEDAC12027A7AA009E0E90 /* Assets.xcassets */,
 				73FEDAC32027A7AA009E0E90 /* LaunchScreen.storyboard */,
 				73FEDAC62027A7AA009E0E90 /* Info.plist */,
-				73FEDAEA2027F8FD009E0E90 /* MovieCell.swift */,
 			);
 			path = flix;
 			sourceTree = "<group>";
@@ -464,8 +489,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				73FEDAE92027D3A5009E0E90 /* NowPlayingViewController.swift in Sources */,
+				7334E4F120311E8600B04396 /* PosterCell.swift in Sources */,
+				7334E4F32031220100B04396 /* SuperheroViewController.swift in Sources */,
 				73FEDABB2027A7AA009E0E90 /* AppDelegate.swift in Sources */,
 				73FEDAEB2027F8FD009E0E90 /* MovieCell.swift in Sources */,
+				73E5FFD4202BB36700D61E36 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
